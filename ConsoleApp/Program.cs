@@ -23,8 +23,8 @@ namespace ConsoleApp
             var qds = uip.GetAll<QueueDefinition>(folder).Result;
             foreach (var queue in qds)
             {
-                IUipathResponseSingle[] test = new IUipathResponseSingle[] { queue };
-                var queueItems = uip.GetAll<QueueItem>(folder, filters: test).Result;
+                //IUipathResponseSingle[] test = new IUipathResponseSingle[] { queue };
+                var queueItems = uip.GetAll<QueueItem>(folder).Result;
             }
         }
     }
